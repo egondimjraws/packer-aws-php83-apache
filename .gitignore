@@ -1,0 +1,18 @@
+# Cache e plugins locais do Packer
+packer_cache/
+.packer.d/
+
+# Logs de build
+packer.log
+*.log
+
+# Manifestos gerados pelo post-processor manifest
+manifest.json
+
+# Arquivos de variáveis com valores locais/sensíveis
+*.auto.pkrvars.hcl
+*.pkrvars.hcl
+
+# Credenciais e chaves
+.env
+*.pem
