@@ -12,6 +12,7 @@ Automatizar a construção de uma imagem imutável de servidor web, em vez de co
 
 ```
 .
+├── .gitignore       # Ignora cache, logs e arquivos sensíveis do Packer
 ├── amazon.pkr.hcl   # Template Packer (HCL)
 └── app/
     └── index.php    # Aplicação de exemplo copiada para o webroot
