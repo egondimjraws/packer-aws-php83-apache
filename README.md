@@ -13,6 +13,7 @@ Automatizar a construção de uma imagem imutável de servidor web, em vez de co
 ```
 .
 ├── .gitignore       # Ignora cache, logs e arquivos sensíveis do Packer
+├── LICENSE          # Licença MIT
 ├── amazon.pkr.hcl   # Template Packer (HCL)
 └── app/
     └── index.php    # Aplicação de exemplo copiada para o webroot
@@ -57,3 +58,7 @@ Ao final, o Packer exibe o ID da AMI criada.
 ## Observação de custos
 
 O build cria recursos temporários (instância, volume EBS, key pair e security group) que o Packer remove ao final. A AMI e o snapshot gerados permanecem na conta e geram custo de armazenamento — remova-os (deregister + delete snapshot) quando não forem mais necessários.
+
+## Licença
+
+Distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE).
