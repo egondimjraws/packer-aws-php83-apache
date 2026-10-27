@@ -2,6 +2,8 @@
 
 Atividade de criação de uma imagem de máquina (AMI) na AWS usando o [HashiCorp Packer](https://www.packer.io/). A AMI gerada já sai com Apache, PHP 8.3 e o código da aplicação instalados, pronta para subir instâncias EC2.
 
+> **Atividade didática:** este projeto tem fins de estudo. O template foi apenas validado (`packer validate`) e o build não foi executado na AWS — nenhuma AMI foi efetivamente criada. As seções de execução e teste abaixo descrevem como seria o processo em uma conta AWS configurada.
+
 ## Objetivo
 
 Automatizar a construção de uma imagem imutável de servidor web, em vez de configurar cada instância manualmente após o boot.
